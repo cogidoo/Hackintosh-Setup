@@ -12,3 +12,7 @@
 * Dell U2515H
 * Harman Kardon SoundSticks III
 * Bluetooth Adapter Dongle, GMYLE Nano USB Broadcom BCM20702
+
+#### Install macOS from USB
+* download macOS via App Store or...
+* download installer with this tool: http://dosdude1.com/highsierra/
