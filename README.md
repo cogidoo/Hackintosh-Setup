@@ -15,4 +15,8 @@
 
 #### Install macOS from USB
 * download macOS via App Store or...
-* download installer with this tool: http://dosdude1.com/highsierra/
+* download installer with [this tool](http://dosdude1.com/highsierra/)
+* create bootable USB-installer with [Unibeast](http://www.unibeast.com/)
+** UEFI boot mode
+** no graphics checked
+** put [Multibeast](http://www.multibeast.com/) at the USB drive
