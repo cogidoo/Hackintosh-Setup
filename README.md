@@ -41,8 +41,8 @@
 #### No Audio ####
 * after installation of macOS the ALC892 audio-chip does not provide any sound natively
 * use [this guide](https://www.tonymacx86.com/threads/applehda-realtek-audio-guide.234732/#post-1606764) to enable sound
-** basically download [this file](audio/audio_clover.zip)
-** mount EFI partition
-** execute audio.command file
-** enter password and answer every question with *y*, except of `Patch AppleHDA.kext for HD4600 HDMI audio`
-** restart and there will be sound
+  * basically download [this file](audio/audio_clover.zip)
+  * mount EFI partition
+  * execute audio.command file
+  * enter password and answer every question with *y*, except of `Patch AppleHDA.kext for HD4600 HDMI audio`
+  * restart and there will be sound
