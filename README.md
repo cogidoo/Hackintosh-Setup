@@ -19,4 +19,18 @@
 * create bootable USB-installer with [Unibeast](http://www.unibeast.com/)
   * UEFI boot mode
   * no graphics checked
-  * put [Multibeast](http://www.multibeast.com/) at the USB drive
+* put [Multibeast](http://www.multibeast.com/) at the USB drive
+* *optional:* put [Little Snitch](https://www.obdev.at/products/littlesnitch)
+* install macOS
+* after install, use Multibeast with following configuration:
+  ```
+  Quick Start > Clover UEFI Boot Mode
+  Drivers > Misc > FakeSMC
+  Drivers > Network > Realtek > RealtekRTL8111 v2.2.1 
+  Drivers > USB > 7/8/9 Series USB Support 
+  Bootloaders > Clover UEFI Boot Mode
+  Customize > System Definitions > iMac > iMac 14,2 
+  Drivers > Graphics > NVIDIA Web Drivers Boot Flag
+  ```
+  * select _no_ audio driver
+  * with the nvidia-flag it is possible to install macOS-graphics-driver from nvidia 
