@@ -22,7 +22,7 @@
 * put [Multibeast](http://www.multibeast.com/) at the USB drive
 * *optional:* put [Little Snitch](https://www.obdev.at/products/littlesnitch)
 * install macOS
-* after install, use Multibeast with following configuration:
+* after install, use Multibeast with the following configuration:
   ```
   Quick Start > Clover UEFI Boot Mode
   Drivers > Misc > FakeSMC
@@ -34,3 +34,15 @@
   ```
   * select _no_ audio driver
   * with the nvidia-flag it is possible to install macOS-graphics-driver from nvidia 
+
+#### Clover Bootloader and EFI parition
+* use [clover configurator](http://mackie100projects.altervista.org/download-clover-configurator/)
+
+#### No Audio ####
+* after installation of macOS the ALC892 audio-chip does not provide any sound natively
+* use [this guide](https://www.tonymacx86.com/threads/applehda-realtek-audio-guide.234732/#post-1606764) to enable sound
+** basically download [this file](audio/audio_clover.zip)
+** mount EFI partition
+** execute audio.command file
+** enter password and answer every question with *y*, except of `Patch AppleHDA.kext for HD4600 HDMI audio`
+** restart and there will be sound
