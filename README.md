@@ -44,5 +44,5 @@
   * basically download [this file](audio/audio_clover.zip) (click `view raw`)
   * mount EFI partition
   * execute audio.command file
-  * enter password and answer every question with *y*, except of `Patch AppleHDA.kext for HD4600 HDMI audio`
+  * enter password and answer every question with *y*, except of `Patch AppleHDA.kext for HD4600 HDMI audio` (see cogidoo/Hackintosh-Setup#1 )
   * restart and there will be sound
