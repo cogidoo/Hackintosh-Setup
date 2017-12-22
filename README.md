@@ -47,4 +47,8 @@
   * enter password and answer every question with *y*, except of `Patch AppleHDA.kext for HD4600 HDMI audio` (see issue [#1][i1])
   * restart and there will be sound
 
+
+
+FakeSMC.kext https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/
+
 [i1]: https://github.com/cogidoo/Hackintosh-Setup/issues/1
