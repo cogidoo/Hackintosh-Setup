@@ -37,6 +37,9 @@
 
 #### Clover Bootloader and EFI parition
 * use [clover configurator](http://mackie100projects.altervista.org/download-clover-configurator/)
+* latest MultiBeast should copy the *FakeSMC.kext* to the EFI partition. if not:
+  * get latest *FakeSMC.kext* from [here](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/) or use [the version of this repo](boot/RehabMan-FakeSMC-2017-1017.zip)
+  * mount EFI partition and copy *FakeSMC.kext* and any other extra necessary kexts to /EFI/CLOVER/kexts/Other/
 
 #### No Audio ####
 * after installation of macOS the ALC892 audio-chip does not provide any sound natively
