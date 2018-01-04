@@ -1,0 +1,47 @@
+#!/bin/bash
+#####################################
+# Create .smb_credentials file in user home dir
+# format:
+# username=[username]
+# password=[password]
+#####################################
+
+LOCAL_USER=[local_osx_user]
+SMB_SERVER=[hostname_of_the_synology_nas]
+CACHE_TIME=900
+
+SMB_CRED_FILE=/Users/${LOCAL_USER}/.smb_credentials
+SMB_CACHE_FILE=/tmp/.smb_cache
+OPTIONS="-fstype=url"
+
+# getting connection-string to the server
+if [ -e $SMB_CRED_FILE ]; then
+	. $SMB_CRED_FILE
+	SERVER=$username:$password@$SMB_SERVER
+else
+	SERVER=$SMB_SERVER
+fi
+
+if [ $# = 0 ]; then
+	if [ -e $SMB_CACHE_FILE ]; then
+		eTime=`date +%s`
+		eval $(stat -s -t %s $SMB_CACHE_FILE)
+		if [ $(($eTime-$st_mtime)) -lt $CACHE_TIME ]; then
+			cat $SMB_CACHE_FILE
+			exit 0
+		fi
+	fi
+
+	rm -rf $SMB_CACHE_FILE
+
+	sudo -u $LOCAL_USER smbutil view //$SERVER | grep Disk | grep -v homes | cut -d " " -f 1 | while read MOUNT;
+	do
+		if [ -n "$MOUNT" ]; then
+			echo "\"${MOUNT}\" ${OPTIONS} cifs://${SERVER}/${MOUNT}" | tee -a $SMB_CACHE_FILE;
+			chmod 0600 $SMB_CACHE_FILE
+		fi
+	done
+	exit 0
+fi
+
+echo "${OPTIONS} cifs://${SERVER}/$1"

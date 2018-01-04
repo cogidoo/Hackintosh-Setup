@@ -66,6 +66,28 @@
   sudo touch /etc/auto_smb
   sudo chmod +x /etc/auto_smb
   ```
-* copy content from [this file](synology/auto_smb) to the newly created `auto_smb`
+* copy content from [this file](synology/auto_smb) to the newly created `auto_smb` and fill in the correct values for the two lines
+  ```
+  LOCAL_USER=[local_osx_user]
+  SMB_SERVER=[hostname_of_the_synology_nas]
+  ```
+* for the credentials of the synology login create the following file
+  ```
+  touch /Users/local_osx_user/.smb_credentials
+  chmod 600 /Users/local_osx_user/.smb_credentials
+  ```
+* copy over and adjust the content from [this file](synology/.smb_credentials) to the newly created file
+* create mount-point
+  ```
+  sudo mkdir /mnt/Storage
+  sudo echo "/mnt/Storage auto_smb" >> /etc/auto_master
+  sudo automount -vc
+  ```
+* list all desired directories with
+  ```
+  cd /mnt/Storage/video
+  cd /mnt/Storage/music
+  cd [...] 
+  ```
 
 [i1]: https://github.com/cogidoo/Hackintosh-Setup/issues/1
