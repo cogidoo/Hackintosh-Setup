@@ -79,8 +79,8 @@
 * copy over and adjust the content from [this file](synology/.smb_credentials) to the newly created file
 * create mount-point
   ```
-  sudo mkdir /mnt/Storage
-  sudo echo "/mnt/Storage auto_smb" >> /etc/auto_master
+  sudo mkdir -p /mnt/Storage
+  sudo bash -c "echo '/mnt/Storage auto_smb' >> /etc/auto_master"
   sudo automount -vc
   ```
 * list all desired directories with
