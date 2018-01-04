@@ -53,5 +53,10 @@
 #### Graphics ####
 * check [tonymacx86](https://www.tonymacx86.com) for latest NVIDIA alternate graphics drivers for macOS
 
+#### iMessage ####
+* use [this guide](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/) at tonymacx86 or view the [pdf version](imessage/an_idiots_guide_to_imessage.pdf) of it
+* useful tools:
+  * [DPCIManager](https://sourceforge.net/projects/dpcimanager/) or use [version from repo](imessage/DPCIManager_ML.zip)
+  * iMessageDebugv2 from [here](http://www.tonymacx86.com/attachments/imessagedebugv2-zip.114403/) or [here](imessage/iMessageDebugv2.zip)
 
 [i1]: https://github.com/cogidoo/Hackintosh-Setup/issues/1
