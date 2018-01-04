@@ -59,4 +59,13 @@
   * [DPCIManager](https://sourceforge.net/projects/dpcimanager/) or use [version from repo](imessage/DPCIManager_ML.zip)
   * iMessageDebugv2 from [here](http://www.tonymacx86.com/attachments/imessagedebugv2-zip.114403/) or [here](imessage/iMessageDebugv2.zip)
 
+#### Mount synology drives ####
+* create auto-mounter-file for smb-drives
+  ```
+  cd /etc
+  sudo touch /etc/auto_smb
+  sudo chmod +x /etc/auto_smb
+  ```
+* copy content from [this file](synology/auto_smb) to the newly created `auto_smb`
+
 [i1]: https://github.com/cogidoo/Hackintosh-Setup/issues/1
