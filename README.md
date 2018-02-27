@@ -95,4 +95,9 @@
   for i in `ls -1 /mnt/Storage`; do ln -s /mnt/Storage/$i /Users/local_osx_user/Storage/$i; done
   ```
 
+#### iTunes crash ####
+* problem is described [here](https://www.tonymacx86.com/threads/half-success-itunes-12-7-constantly-crashing-random-messages.233135/) 
+* solution: 
+  * mount EFI partition and copy [lilu.kext](https://github.com/vit9696/Lilu/releases) and [shiki.kext](https://github.com/vit9696/Shiki/releases) to /EFI/CLOVER/kexts/Other/
+
 [i1]: https://github.com/cogidoo/Hackintosh-Setup/issues/1
