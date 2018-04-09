@@ -52,6 +52,8 @@
 
 #### Graphics ####
 * check [tonymacx86](https://www.tonymacx86.com) for latest NVIDIA alternate graphics drivers for macOS
+* use [Native Display Brightness](https://github.com/KAMIKAZEUA/NativeDisplayBrightness) to adjust the brightness of the screen via F1/F2
+  * in addition [FunctionFlip](http://kevingessner.com/software/functionflip/) is necessary to avoid pressing the fn-key  
 
 #### iMessage ####
 * use [this guide](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/) at tonymacx86 or view the [pdf version](imessage/an_idiots_guide_to_imessage.pdf) of it
