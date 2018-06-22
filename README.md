@@ -11,7 +11,8 @@
 * Apple Trackpad
 * Dell U2515H
 * Harman Kardon SoundSticks III
-* Bluetooth Adapter Dongle, GMYLE Nano USB Broadcom BCM20702
+* ~~Bluetooth Adapter Dongle, GMYLE Nano USB Broadcom BCM20702~~
+* Fenvi FV-T919 Wireless High-Speed Network Adapter
 
 #### Install macOS from USB
 * download macOS via App Store or...
